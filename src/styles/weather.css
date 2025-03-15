@@ -1,0 +1,108 @@
+/* Base styling */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.5s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styling */
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-input {
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.weather-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weather-button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 20px;
+}
+
+/* Weather display styling */
+.weather-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.weather-location {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+
+.weather-temp {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.weather-description {
+  font-size: 1.5rem;
+  color: #34495e;
+  text-transform: capitalize;
+}
+
+/* Dynamic background based on weather */
+.app.clear {
+  background: linear-gradient(to right, #87ceeb, #f7d794);
+}
+
+.app.clouds {
+  background: linear-gradient(to right, #757f9a, #d7dde8);
+}
+
+.app.rain {
+  background: linear-gradient(to right, #005c97, #363795);
+}
+
+.app.snow {
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+.app.thunderstorm {
+  background: linear-gradient(to right, #232526, #414345);
+}

@@ -1,0 +1,30 @@
+.app {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.weather-container {
+  margin-top: 20px;
+}
+
+.weather-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
